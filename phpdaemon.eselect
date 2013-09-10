@@ -15,7 +15,7 @@ find_targets() {
 
 # get active phpdaemon simlink
 get_active() {
-    readlink -e "${EROOT}"/usr/bin/phpd | sed -ne "s:.*/usr/.*/\(phpdaemon\)/\([0-9]\.[0-9][0-9]*\)/bin/phpd:\2:p"
+    readlink -e "${EROOT}"/usr/bin/phpd | sed -ne "s:.*/usr/.*/\(phpdaemon\)/\([0-9\.wekly]*\)/bin/phpd:\2:p"
 }
 
 ### show action ###
