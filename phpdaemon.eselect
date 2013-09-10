@@ -8,7 +8,7 @@ VERSION="20130910"
 # find a list of phpdaemon targets
 find_targets() {
     local f
-    for f in "${EROOT}"/usr/bin/phpd[[:digit:]]*; do
+    for f in "${EROOT}"/usr/bin/phpd[[:digit:]weekly]*; do
         [[ -f ${f} ]] && basename "${f}"
     done
 }
